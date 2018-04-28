@@ -1,0 +1,9 @@
+<!--pages/bookstore/bookstore.wxml-->
+<scroll-view scroll-y="true" class="jokeTextContainer">
+  <view wx:for="{{jokeList}}" wx:key="ct" class="jokeTextItem">
+    <view>
+      <view class="itemTitle">{{item.title}}</view>
+      <text class="itemText" selectable="{{true}}">{{item.text}}</text>
+    </view>
+  </view> 
+</scroll-view>

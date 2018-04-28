@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookstore/bookstore",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#4CAF50",
+    "navigationBarTitleText": "乐趣十足",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#4CAF50",
+    "color": "#388E3C",
+    "selectedColor": "#C8E6C9",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "趣图",
+        "iconPath": "static/images/icons8-home-filled-50.png",
+        "selectedIconPath": "static/images/icons8-home-50.png"
+      },
+      {
+        "pagePath": "pages/bookstore/bookstore",
+        "text": "趣文",
+        "iconPath": "static/images/icons8-ereader-filled-50.png",
+        "selectedIconPath": "static/images/icons8-ereader-50.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/images/icons8-user-filled-50.png",
+        "selectedIconPath": "static/images/icons8-user-50.png"
+      }
+    ]
+  },
+  "debug": true
+}

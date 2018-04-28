@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class ="container">
+  <scroll-view>  
+    <view wx:for="{{jokeList}}" wx:key="ct" class="jokeImgItem">
+      <image src="{{item.img}}" lazy-load="{{true}}" class="jokeItemImg" data-img-obj="{{item}}" catch:tap="showMask"></image>
+      <view class="jokeItemText">{{item.title}}</view>
+    </view>
+  </scroll-view> 
+  <view class="jokeMask" hidden="{{!showMask}}" catch:tap="closeMask" catchtouchmove="maskTouchMove">
+    <image src="{{curImgObj.img}}" lazy-load="{{true}}" mode="aspectFit" class="maskImg" style="width: {{maskImgWidth}}px"></image>
+    <view class="maskText">{{curImgObj.title}}</view>
+  </view>
+</view>

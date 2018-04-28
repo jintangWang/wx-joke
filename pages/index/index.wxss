@@ -1,0 +1,45 @@
+/**index.wxss**/
+
+.jokeImgItem{
+  width: 50%;
+  overflow: hidden;
+  float: left;
+  padding: 8rpx;
+  box-sizing: border-box;
+}
+
+.jokeItemImg{
+  width: 100%;
+}
+
+.jokeItemText{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 24rpx;
+}
+
+.jokeMask {
+  z-index:1;
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.8);
+  bottom:0;
+  right:0;
+}
+
+.maskImg{
+  /* width: 100%; */
+  height:calc(100% - 50rpx);
+}
+
+.maskText {
+  width:100%;
+  text-align:center;
+  line-height:1.5;
+  color:#CCC;
+  font-size:26rpx;
+}
